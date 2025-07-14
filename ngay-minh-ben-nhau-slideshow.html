@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ngày mình bên nhau</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 30px;
+            font-size: 36px;
+            color: #d63384;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 700px;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            border-radius: 15px;
+        }
+        .active {
+            display: block;
+        }
+        .caption {
+            color: #888;
+            font-size: 14px;
+            padding: 10px 0;
+        }
+        audio {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>💞 NGÀY MÌNH BÊN NHAU 💞</h1>
+    <p>“Từng khoảnh khắc bên nhau đều là những điều dễ thương nhất trên đời.”</p>
+    <div class="slideshow-container">
+        <img class="slides" src="37ED8EE7-160C-4D6D-8126-6E961C4683AC.jpeg" alt="kỷ niệm">
+<img class="slides" src="5333F653-0A88-4BB5-838F-A7B61349F94E.jpeg" alt="kỷ niệm">
+<img class="slides" src="8A090F21-4B4F-4C38-AF9E-FABC75743278.jpeg" alt="kỷ niệm">
+<img class="slides" src="441C8CC6-8442-40B4-82E8-88C20E8A64F2.jpeg" alt="kỷ niệm">
+<img class="slides" src="41FC2BE0-4C8F-4E26-9585-E8BEB2796C47.jpeg" alt="kỷ niệm">
+<img class="slides" src="5190F78D-F2CF-446A-B686-B68DB37CBDF1.jpeg" alt="kỷ niệm">
+<img class="slides" src="9ED05B11-9E2E-4D2F-88AA-564B87F02EF8.jpeg" alt="kỷ niệm">
+<img class="slides" src="7336EE3C-DD19-4C1A-B378-4695A0F72A15.jpeg" alt="kỷ niệm">
+<img class="slides" src="C9E4737E-FAF4-43CB-A799-4F306D47D5C2.jpeg" alt="kỷ niệm">
+<img class="slides" src="AEE3BF6D-DA2F-44CC-A099-D78E4CB1DEAA.jpeg" alt="kỷ niệm">
+<img class="slides" src="IMG_9488.jpeg" alt="kỷ niệm">
+<img class="slides" src="32435D63-BB35-47FE-9CC0-4B85B906C494.jpeg" alt="kỷ niệm">
+<img class="slides" src="31065DF5-F2A5-4EDA-B329-B11FC3AA2E27.jpeg" alt="kỷ niệm">
+<img class="slides" src="B868EAC4-D8CC-4663-B9EB-1939953E1695.jpeg" alt="kỷ niệm">
+<img class="slides" src="E5AF23CC-3C22-4BA1-8D25-F0B8FAED2CB6.jpeg" alt="kỷ niệm">
+<img class="slides" src="451918FD-8E87-4398-8DED-0F6902F0D537.jpeg" alt="kỷ niệm">
+<img class="slides" src="8AEED235-52CB-43B1-A497-403F35A908CC.jpeg" alt="kỷ niệm">
+<img class="slides" src="199B39AA-D3E8-4F3C-AF2D-B421EDFC1FCA.jpeg" alt="kỷ niệm">
+<img class="slides" src="4DD4BA04-0CBA-45EC-81BE-E57E5F64CC12.jpeg" alt="kỷ niệm">
+<img class="slides" src="1CDE4F7B-1175-4386-9E66-BA811BA88310.jpeg" alt="kỷ niệm">
+    </div>
+    <audio autoplay loop>
+        <source src="https://music.youtube.com/watch?v=OkXnZSafFns&si=WEC0L9ejY0cbhQ7h" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slides");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 2500);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
